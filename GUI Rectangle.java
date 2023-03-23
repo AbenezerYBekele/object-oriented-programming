@@ -1,6 +1,5 @@
  package thing;
-///Given the length and width of a rectangle, this Java
-//program determines its area and perimeter.
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -23,26 +22,26 @@ public class RectangleProgram extends JFrame
       areaL = new JLabel("Area: ", SwingConstants.RIGHT);
       perimeterL = new JLabel("Perimeter: ",
                                   SwingConstants.RIGHT);
-             //Create the four text fields
+            
       lengthTF = new JTextField(10); 
       widthTF = new JTextField(10);
       areaTF = new JTextField(10);
       perimeterTF = new JTextField(10);
-             //Create Calculate Button
+           
       calculateB = new JButton("Calculate");
       cbHandler = new CalculateButtonHandler();
       calculateB.addActionListener(cbHandler);
-             //Create Exit Button
+             
       exitB = new JButton("Exit");
       ebHandler = new ExitButtonHandler();
       exitB.addActionListener(ebHandler);
-             //Set the title of the window
+             
       setTitle("Area and Perimeter of a Rectangle"); 
-             //Get the container
+            
       Container pane = getContentPane();
-             //Set the layout
+             
       pane.setLayout(new GridLayout(5, 2));
-             //Place the components in the pane
+             
       pane.add(lengthL);
       pane.add(lengthTF);
       pane.add(widthL);
@@ -53,7 +52,7 @@ public class RectangleProgram extends JFrame
       pane.add(perimeterTF);
       pane.add(calculateB);
       pane.add(exitB);
-             //Set the size of the window and display it
+            
       setSize(WIDTH, HEIGHT);
       setVisible(true);
       setDefaultCloseOperation(EXIT_ON_CLOSE);
