@@ -48,11 +48,9 @@ public class PizzaShop   extends JFrame
 	        }
 		   
 	
- 	// modal shop 
-    
+ 		// modal shop 
     	public PizzaShop ()
     	{
-    		//JFrame frame = new JFrame();
     		super("Pizza");
     		Container c = getContentPane();
     		c.setLayout(null);
@@ -60,8 +58,7 @@ public class PizzaShop   extends JFrame
     		
     	
     		
-    	//CheckBox 
-    		// boolean cbg = new CheckboxGroup(); 
+    		//CheckBox 
     		Green = new JCheckBox("Green Pepper" );
     		Olives = new JCheckBox("Black Olives");
     	    Muchroom = new JCheckBox("Muchrooms");
@@ -69,46 +66,20 @@ public class PizzaShop   extends JFrame
     	    Pepproni = new JCheckBox("Pepproni" );
     	    Sauage = new JCheckBox( "Sauage");
     		
-    		
-//        Green = new JCheckBox("Green Pepper");
-//		Olives = new JCheckBox("Black Olives");
-//	    Muchroom = new JCheckBox("Muchrooms");
-//	    Cheese = new JCheckBox("Extra Cheese");
-//	    Pepproni = new JCheckBox("Pepproni" );
-//	    Sauage = new JCheckBox( "Sauage");
-    		
-//   
-	    
-	   // CalculateButtonHandler handler = new CalculateButtonHandler();
-//	    Green.addActionListener(TRHandler);
-//	    Olives.addActionListener(TRHandler);
-//	    
-	 // Button
 	    Process = new JButton("Process Selection");
 	    TRHandler= new CalculateButtonHandler();
 	    Process.addActionListener(TRHandler);
 	    
-	    
-	    // checkBox
-//        CalculateButtonHandler handler = new CalculateButtonHandler();	    
-//        Green.addActionListener(TRHandler);
-//        Olives.addActionListener(TRHandler);
-//        Muchroom.addActionListener(TRHandler);
-//	    Cheese.addActionListener(TRHandler);
-//        Pepproni.addActionListener(TRHandler);
-//        Sauage.addActionListener(TRHandler);
-//        
-	    // Radio Button Pizza Size
 	    Small = new JRadioButton("Small: $6.50");
-	     Medium = new JRadioButton(" Madium: $8.50");
-	     Large = new JRadioButton("Large: $10.00");
+	    Medium = new JRadioButton(" Madium: $8.50");
+	    Large = new JRadioButton("Large: $10.00");
 	
 	    
-//       Group Size
+		// Group Size
 	    ButtonGroup Size = new ButtonGroup();
-       Size.add(Small);
-       Size.add(Medium);
-       Size.add(Large);
+       	Size.add(Small);
+       	Size.add(Medium);
+       	Size.add(Large);
 	    
        
 	    // Radio Button type
@@ -116,22 +87,18 @@ public class PizzaShop   extends JFrame
 	    Medu= new JRadioButton("Thin Crust");
 	    Pan = new JRadioButton ("Pan");
 	    
-//	     Group Types
+		// Group Types
 	    ButtonGroup Types = new ButtonGroup();
 	       Types.add(Thin);
 	       Types.add(Medu);
 	       Types.add(Pan);
 	    
-	   //  Text 
-	    Resultts = new JTextArea();
-	    Resultts.setFont(new Font("Courier",Font.PLAIN,12));
-	   //   JButton button = new JButton("Process Selection");
-//	 	// button.addAncestorListener(this);
-
-	    
-	    
+	//  Text 
+	Resultts = new JTextArea();
+	Resultts.setFont(new Font("Courier",Font.PLAIN,12));
+	   
 	      
-	  //   set Topping
+	  	// set Topping
 	    Green.setSize (120, 30);
 	    Olives.setSize (120, 30);
 	    Muchroom.setSize (120, 30);
@@ -150,14 +117,12 @@ public class PizzaShop   extends JFrame
 	    Pan.setSize (120, 30);
 	    
 	    // set Text area 
-	  Resultts.setSize( 460, 150);
-	// Lab.setSize(460, 150);  
+	  	Resultts.setSize( 460, 150);
 	    
-	  // set button
-	  Process.setSize(220, 30);
-	  
-	     
-	    // Location of Topping
+	  	// set button
+	  	Process.setSize(220, 30);
+	
+	  	// Location of Topping
 	    Green.setLocation (120, 100);
 	    Olives.setLocation (120, 140);
 	    Muchroom.setLocation (120,180);
@@ -178,8 +143,6 @@ public class PizzaShop   extends JFrame
     
 	    // Location Text area 
 	    Resultts.setLocation(100,370);
-	//	Lab.setLocation(100, 350 );   
-	    // Location button
 	    Process.setLocation(290, 260);
 	    
 	    
@@ -192,7 +155,6 @@ public class PizzaShop   extends JFrame
 	    c.add (Sauage);
 	    
 	    // pane Pizza Size
-	  
 	    c.add (Small);
 	    c.add (Medium);
 	    c.add (Large);
@@ -202,10 +164,9 @@ public class PizzaShop   extends JFrame
 	    c.add (Medu);
 	    c.add (Pan);
 	    
-	    //     text
+	    //text
 	    c.add(Resultts);
-	   // c.add(Lab);
-	     
+	  	     
 	    // pane button
 	    c.add(Process);
 
@@ -230,30 +191,18 @@ public class PizzaShop   extends JFrame
 	        
         }// pizza Shop
     	private void DBill()
-    	{
-    		double m = 1.50;
-
-    		 
-    		
+    	{double m = 1.50; 		
     	}
-//    	double    m6 =1.50, m5= 1.50,m4 = 1.50,m3 = 1.50, m2=1.50,m1 = 1.50;
-//		 double PS =6.50 ;
-//		 double PM = 8.50;
-//		 double PL = 10.00;
     	 private class CalculateButtonHandler implements ActionListener
     	{
     	
     		 public void actionPerformed(ActionEvent e){
-    		//double    m7 ,m6 , m5, m4, m3, m2, m1;
-//    		double PS, PM, PL;
-    		//double m = 0;
     			 double M = 0;
     			 double PS =0 ;
     			 double PM = 0;
     			 double PL = 0;
     			 double T= 0;
-    			// String Text ;
-//      		   
+    			
       	if ( Green.isSelected() ) 
       	{	
       		 T +=1.50;   		
@@ -303,13 +252,9 @@ public class PizzaShop   extends JFrame
     		
     		 }	
     	}
-    	   
-    	
-  	
-    	// main
     	public static void main(String[] args)
     	   {
     	        PizzaShop alc = new PizzaShop();
     	   }
-    }// end of class
+    }
  
