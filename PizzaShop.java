@@ -7,51 +7,44 @@ import javax.swing.*;
 public class PizzaShop   extends JFrame 
 {
 	 private JCheckBox Green, Olives ,Muchroom, Cheese, Pepproni, Sauage;
-	// private int Green, Olives ;
 	 private  JTextArea Resultts;
 	 private ButtonGroup group2 ,  group ;
 	 private JRadioButton Small, Medium, Large;
 	 private JRadioButton Thin, Medu, Pan;
 	 private JLabel Lab;
-//	 private JComboBox Combo1;
 	 private JButton Process;
 	 private CalculateButtonHandler  TRHandler;
 	 
 		  
 	//  title in JLabel
 	 public void paint(Graphics g)
-	 {
-		   super.paint(g);
+	 {	   super.paint(g);
 		   g.setColor(Color.red);
 		   g.setFont(new Font("Serif" , Font.BOLD+Font.ITALIC, 30)); 
 		   g.drawString(" Welcome to Home Stlye pizza Shop",100,90);
 		   		
-		   		// Topping
-		   g.setColor(Color.red);
+		// Topping
+		g.setColor(Color.red);
 	        g.drawRect(120, 105, 130 , 260);
-	        
 	        g.setFont(new Font(getName(), Font.BOLD, 10));
-			g.drawString(" Each Topping: $1.50",125, 120);
+		g.drawString(" Each Topping: $1.50",125, 120);
 	       
-			// Size
+		// Size
 	        g.setColor(Color.red);
 	        g.drawRect(255, 105,125 , 150);
 	        g.setFont(new Font(getName(), Font.BOLD, 10));
-			g.drawString(" Pizza Size",260, 120);	
+		g.drawString(" Pizza Size",260, 120);	
 	        
-			//Type
+		//Type
 	        g.setColor(Color.red);
 	        g.drawRect(385, 105, 125, 150);
 	        g.setFont(new Font(getName(), Font.BOLD, 10));
 			g.drawString(" Pizza Type",390, 120);
 			
-			// Your order:
-			//100,350
-			g.setColor(Color.black);
+		// Your order:
+		g.setColor(Color.black);
 		g.setFont(new Font(getName(), Font.BOLD, 15));
 		g.drawString(" Your order :",100, 385);
-		   
-			
 	        }
 		   
 	
